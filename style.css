@@ -631,7 +631,7 @@ body {
 /* --------------------------------------------------------------------------- text infos data */
 /* --------------------------------------------------------------------------- speed */
 .set-speed dl.infos dd span:after {
-  content: 'Orbit Velocity'; }
+  content: 'Vận tốc quỹ đạo'; }
 
 .set-speed #sun dl.infos dd:after {
   content: '0 km/h'; }
@@ -662,7 +662,7 @@ body {
 
 /* --------------------------------------------------------------------------- size */
 .set-size dl.infos dd span:after {
-  content: 'Equatorial Circumference'; }
+  content: 'Chu vi xích đạo'; }
 
 .set-size #sun dl.infos dd:after {
   content: '4,370,005 km'; }
@@ -693,10 +693,10 @@ body {
 
 /* --------------------------------------------------------------------------- distance */
 .set-distance dl.infos dd span:after {
-  content: 'From Sun'; }
+  content: 'Từ mặt trời'; }
 
 .set-distance #sun dl.infos dd span:after {
-  content: 'From Earth'; }
+  content: 'Từ trái đất'; }
 
 .set-distance #sun dl.infos dd:after {
   content: '149,598,262 km'; }
@@ -1094,7 +1094,10 @@ dl.infos dt {
   bottom: 30px;
   color: #FFF;
   font-size: 14px;
-  text-shadow: 1px 1px 2px black; }
+  text-shadow: 1px 1px 2px black;
+  white-space: nowrap;
+}
+
 
 dl.infos dd:after {
   position: absolute;
@@ -1494,3 +1497,8 @@ body {
 @media screen and (min-width: 1600px) {
   .zoom-close .scale-d #solar-system {
     margin-left: -120%; } }
+
+
+.set-none dl.infos {
+  display: none !important;
+}
