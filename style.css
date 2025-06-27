@@ -1502,23 +1502,3 @@ body {
 .set-none dl.infos {
   display: none !important;
 }
-
-
-/* Button xoay */
-#rotate-toggle {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 1000;
-  padding: 10px 14px;
-  font-size: 16px;
-  border: none;
-  border-radius: 8px;
-  background: #007bff;
-  color: white;
-  opacity: 0.8;
-  cursor: pointer;
-}
-#rotate-toggle:hover {
-  opacity: 1;
-}

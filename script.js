@@ -67,21 +67,3 @@ $(".set-distance").click(function() {
   init();
 
 });
-
-// Button xoay
-document.getElementById("rotate-toggle").addEventListener("click", async () => {
-  if (screen.orientation && screen.orientation.lock) {
-    try {
-      const current = screen.orientation.type;
-      if (current.startsWith("portrait")) {
-        await screen.orientation.lock("landscape");
-      } else {
-        await screen.orientation.lock("portrait");
-      }
-    } catch (err) {
-      alert("Thiết bị không hỗ trợ thay đổi hướng xoay tự động.");
-    }
-  } else {
-    alert("Trình duyệt không hỗ trợ API xoay màn hình.");
-  }
-});
