@@ -3,7 +3,6 @@
   "short_name": "Hệ mặt trời",
   "start_url": ".",
   "display": "standalone",
-  "orientation": "portrait",
   "background_color": "#ffffff",
   "theme_color": "#007bff",
   "icons": [
